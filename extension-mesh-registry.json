@@ -1,0 +1,32 @@
+{
+    "schemaVersion": 1,
+    "name": "aggrosoft/ecomponents-demo-theme",
+    "extensions": [
+        {
+            "name": "EcomponentsStarterTheme",
+            "label": {
+                "de-DE": "Ecomponents Starter",
+                "en-GB": "Ecomponents Starter"
+            },
+            "description": {
+                "de-DE": "Kostenloses Shopware-6.7-Theme unter MIT-Lizenz mit responsiven Produktkarten, klarer Navigation und anpassbaren Farben, Schriften, Eckenradien und Inhaltsbreite.",
+                "en-GB": "Free MIT-licensed Shopware 6.7 theme with responsive product cards, clear navigation, configurable colours, fonts, corner radius and content width, using native Shopware features."
+            },
+            "manufacturer": "Aggrosoft GmbH",
+            "license": "MIT",
+            "homepage": "https://github.com/aggrosoft/ecomponents-demo-theme",
+            "releases": [
+                {
+                    "version": "1.0.1",
+                    "shopware": "~6.7.0",
+                    "php": ">=8.2",
+                    "downloadUrl": "https://github.com/aggrosoft/ecomponents-demo-theme/releases/download/v1.0.1/EcomponentsStarterTheme-1.0.1.zip",
+                    "sha256": "58c76e6cd7b81049248a66fbf8e9a7eb2241837fa2b922f497aa0bd94df0e32f",
+                    "releasedAt": "2026-11-17T13:52:50+00:00",
+                    "security": false,
+                    "changelogUrl": "https://github.com/aggrosoft/ecomponents-demo-theme/releases/tag/v1.0.1"
+                }
+            ]
+        }
+    ]
+}

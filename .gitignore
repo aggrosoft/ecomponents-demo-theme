@@ -1,9 +1,0 @@
-/vendor/
-/node_modules/
-/.idea/
-/.vscode/
-/.phpunit.cache/
-/.build/
-/.shopware-extension.yml
-.DS_Store
-*.log
