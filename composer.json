@@ -1,0 +1,28 @@
+{
+  "name": "ecomponents/starter-theme",
+  "description": "A lightweight, configurable Shopware 6.7 storefront theme by Ecomponents.",
+  "version": "1.0.0",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "require": {
+    "php": ">=8.2",
+    "shopware/core": "~6.7.0",
+    "shopware/storefront": "~6.7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Ecomponents\\StarterTheme\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "Ecomponents\\StarterTheme\\EcomponentsStarterTheme",
+    "label": {
+      "de-DE": "Ecomponents Starter",
+      "en-GB": "Ecomponents Starter"
+    },
+    "description": {
+      "de-DE": "Schlichtes, anpassbares Theme mit klarer Navigation und responsiven Produktkarten. Kostenlos unter MIT-Lizenz.",
+      "en-GB": "A clean, configurable theme with clear navigation and responsive product cards. Free under the MIT license."
+    }
+  }
+}

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Ecomponents Starter</title>
+  <desc id="desc">Schematische Vorschau des hellen Themes mit klarer Navigation, großem Einstieg und drei Produktkarten.</desc>
+  <rect width="1200" height="800" fill="#f3f5f6"/>
+  <rect x="64" y="52" width="1072" height="696" rx="20" fill="#fff" stroke="#dce1e4"/>
+  <text x="110" y="116" fill="#172c3d" font-family="Arial, sans-serif" font-size="25" font-weight="700">Ecomponents<tspan fill="#c04e0b"> Starter</tspan></text>
+  <rect x="635" y="85" width="270" height="40" rx="8" fill="#f4f6f7"/>
+  <circle cx="1000" cy="105" r="13" fill="none" stroke="#233547" stroke-width="3"/>
+  <path d="M1048 99h25l-3 19h-19z M1055 99v-5a6 6 0 0 1 12 0v5" fill="none" stroke="#233547" stroke-width="3"/>
+  <path d="M64 149h1072" stroke="#dce1e4"/>
+  <text x="110" y="182" fill="#53606b" font-family="Arial, sans-serif" font-size="15">ENTDECKEN</text>
+  <rect x="110" y="218" width="980" height="214" rx="13" fill="#f3f5f6"/>
+  <rect x="146" y="254" width="52" height="5" rx="2" fill="#c04e0b"/>
+  <text x="146" y="303" fill="#172c3d" font-family="Arial, sans-serif" font-size="35" font-weight="700">Einfach. Klar. Dein Shop.</text>
+  <rect x="146" y="325" width="326" height="10" rx="5" fill="#c6cfd4"/>
+  <rect x="146" y="354" width="132" height="40" rx="7" fill="#233547"/>
+  <text x="165" y="380" fill="#fff" font-family="Arial, sans-serif" font-size="15">Entdecken →</text>
+  <circle cx="941" cy="321" r="73" fill="#f5dfcf"/>
+  <rect x="870" y="280" width="77" height="100" rx="14" fill="#c04e0b" transform="rotate(-12 908 330)"/>
+  <rect x="935" y="262" width="58" height="118" rx="13" fill="#233547" transform="rotate(14 964 321)"/>
+  <g fill="#fff" stroke="#dce1e4"><rect x="110" y="466" width="306" height="236" rx="12"/><rect x="446" y="466" width="306" height="236" rx="12"/><rect x="782" y="466" width="306" height="236" rx="12"/></g>
+  <g fill="#f3f5f6"><rect x="130" y="486" width="266" height="121" rx="8"/><rect x="466" y="486" width="266" height="121" rx="8"/><rect x="802" y="486" width="266" height="121" rx="8"/></g>
+  <g fill="#233547"><rect x="233" y="507" width="62" height="80" rx="12"/><circle cx="599" cy="547" r="37"/><path d="M897 574l38-65 38 65z"/></g>
+  <g fill="#b9c4ca"><rect x="132" y="629" width="170" height="10" rx="5"/><rect x="468" y="629" width="170" height="10" rx="5"/><rect x="804" y="629" width="170" height="10" rx="5"/></g>
+  <g fill="#c04e0b"><rect x="132" y="658" width="70" height="12" rx="5"/><rect x="468" y="658" width="70" height="12" rx="5"/><rect x="804" y="658" width="70" height="12" rx="5"/></g>
+</svg>
