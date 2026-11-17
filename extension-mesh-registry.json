@@ -17,6 +17,16 @@
             "homepage": "https://github.com/aggrosoft/ecomponents-demo-theme",
             "releases": [
                 {
+                    "version": "1.1.1",
+                    "shopware": "~6.7.0",
+                    "php": ">=8.2",
+                    "downloadUrl": "https://github.com/aggrosoft/ecomponents-demo-theme/releases/download/v1.1.1/EcomponentsStarterTheme-1.1.1.zip",
+                    "sha256": "ea10af7738e08d4fe4c2a7567e20d266b7502e0e1a833d7668429a696a6b8755",
+                    "releasedAt": "2026-11-17T14:24:58+00:00",
+                    "security": false,
+                    "changelogUrl": "https://github.com/aggrosoft/ecomponents-demo-theme/releases/tag/v1.1.1"
+                },
+                {
                     "version": "1.1.0",
                     "shopware": "~6.7.0",
                     "php": ">=8.2",
