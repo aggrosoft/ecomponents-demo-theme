@@ -42,7 +42,7 @@ store:
       <p>Ecomponents Starter ist ein kostenloses, eigenständiges Storefront-Theme für Shopware 6.7. Eine helle Oberfläche, gut lesbare Typografie, warme Akzente und dunkle Kaufbuttons sorgen für einen ruhigen Auftritt. Produktkarten, Navigation, Produktdetails, Formulare und Footer sind aufeinander abgestimmt.</p>
       <h3>Schlicht im Auftritt, flexibel in der Pflege</h3>
       <p>Farben, Schriftfamilien und Logos pflegst du über die normalen Shopware-Theme-Einstellungen. Zusätzlich lassen sich der Eckenradius und die maximale Inhaltsbreite einstellen. Das Theme schreibt keine Shopbezeichnung, kein Logo und keine feste Demo-Adresse in deine Storefront.</p>
-      <ul><li>Responsive Produktkarten mit ausgerichtetem Preis- und Aktionsbereich</li><li>Klare Kategorie-Seitenleiste und native Produktfilter</li><li>Abgestimmte Produktdetails, Konto-, Warenkorb- und Checkout-Formulare</li><li>Native mobile Navigation und Shopware-Rechtsdialoge</li><li>Optionale CMS-Klassen für Einstiege, Inhaltskarten und Vorteilslisten</li></ul>
+      <ul><li>Responsive Produktkarten mit ausgerichtetem Preis- und Aktionsbereich</li><li>Klare Kategorie-Seitenleiste und native Produktfilter</li><li>Abgestimmte Produktdetails, Konto-, Warenkorb- und Checkout-Formulare</li><li>Native mobile Navigation und Shopware-Rechtsdialoge</li><li>Native CMS-Gestaltung für Hero, Themen-Teaser, Vorteile, Produkt-Slider und Editorial</li></ul>
       <h3>Shopware bleibt die Grundlage</h3>
       <p>Das Theme erweitert das Shopware-Standardtheme und übernimmt dessen Daten und Funktionen. Es benötigt weder EcomponentsTheme noch ExtensionMesh für den Betrieb. ExtensionMesh ist lediglich ein möglicher Installations- und Updateweg. Es gibt keine zusätzliche JavaScript-Datei, keine mitgelieferten externen Schriftquellen und keine eigenen Datenbankmigrationen.</p>
       <p>Produkte, Bilder, Navigation und Erlebniswelten stammen aus deinem Shop. Es werden keine Beispielprodukte oder CMS-Seiten angelegt. Die Screenshots zeigen eine lokale Theme-Vorschau mit vorhandenen Beispielinhalten; diese Inhalte sind nicht Bestandteil des Downloads.</p>
@@ -53,7 +53,7 @@ store:
       <p>Ecomponents Starter is a free, standalone Storefront theme for Shopware 6.7. Its light surfaces, readable typography, warm accents and dark purchase buttons create a calm design. Navigation, product cards, product details, forms and the footer share a consistent appearance.</p>
       <h3>Simple design, flexible configuration</h3>
       <p>Use the native Shopware theme settings to configure colours, font families and logos. Additional settings control corner radius and maximum content width. No shop name, logo or fixed demo URL is embedded in your storefront.</p>
-      <ul><li>Responsive product cards with aligned price and action areas</li><li>A clear category sidebar and native product filters</li><li>Coordinated product details, account, cart and checkout forms</li><li>Native mobile navigation and Shopware legal dialogs</li><li>Optional CMS classes for introductory sections, content cards and benefit lists</li></ul>
+      <ul><li>Responsive product cards with aligned price and action areas</li><li>A clear category sidebar and native product filters</li><li>Coordinated product details, account, cart and checkout forms</li><li>Native mobile navigation and Shopware legal dialogs</li><li>Native CMS styling for hero sections, topic teasers, benefits, product sliders and editorial content</li></ul>
       <h3>Built on Shopware</h3>
       <p>The theme extends the default Shopware theme and retains its data and functionality. Neither EcomponentsTheme nor ExtensionMesh is required at runtime. ExtensionMesh is an optional installation and update channel. There is no additional JavaScript bundle, no bundled external font source and no custom database migration.</p>
       <p>Products, images, navigation and Shopping Experiences come from your shop. No demo products or CMS pages are created. Screenshots show a local theme preview with existing sample content; that content is not included in the download.</p>
@@ -83,7 +83,7 @@ store:
       - Farben, Logos und Schriftfamilien über Shopware pflegbar
       - Eckenradius von 0 bis 24 Pixeln
       - Maximale Inhaltsbreite von 960 bis 1680 Pixeln
-      - Optionale CMS-Klassen für Hero, Karten und Vorteile
+      - Native CMS-Blöcke für Hero, Teaser-Galerie, Vorteile und Editorial
       - Keine eigenen Entitäten, Migrationen oder Beispieldaten
     en:
       - Responsive product cards and clear navigation
@@ -92,7 +92,7 @@ store:
       - Native colour, logo and font-family settings
       - Corner radius from 0 to 24 pixels
       - Maximum content width from 960 to 1680 pixels
-      - Optional CMS classes for hero sections, cards and benefits
+      - Native CMS blocks for hero, teaser gallery, benefits and editorial content
       - No custom entities, migrations or sample data
   tags:
     de: [Theme, Storefront, Responsiv, Kostenlos, MIT]
@@ -126,23 +126,33 @@ store:
         position: 4
   image_directory: docs/screenshots
   images:
-    - file: 01-catalog-desktop.png
+    - file: 05-home-desktop.png
       activate: {de: true, en: true}
       preview: {de: true, en: true}
       position: 1
       priority: 1
-    - file: 02-product-desktop.png
+    - file: 06-home-mobile.png
       activate: {de: true, en: true}
       preview: {de: false, en: false}
       position: 2
       priority: 2
-    - file: 03-product-mobile.png
+    - file: 01-catalog-desktop.png
       activate: {de: true, en: true}
       preview: {de: false, en: false}
       position: 3
       priority: 3
-    - file: 04-account-desktop.png
+    - file: 02-product-desktop.png
       activate: {de: true, en: true}
       preview: {de: false, en: false}
       position: 4
       priority: 4
+    - file: 03-product-mobile.png
+      activate: {de: true, en: true}
+      preview: {de: false, en: false}
+      position: 5
+      priority: 5
+    - file: 04-account-desktop.png
+      activate: {de: true, en: true}
+      preview: {de: false, en: false}
+      position: 6
+      priority: 6

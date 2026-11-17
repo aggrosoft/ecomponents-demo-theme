@@ -1,9 +1,10 @@
 // Native listing, filters, sliders and gallery; no markup reordering or hidden content.
 .cms-section-sidebar > .row { margin-inline: 0; }
-.product-box { height: 100%; border: 1px solid $sw-border-color; border-radius: var(--ec-starter-radius); box-shadow: 0 3px 14px rgba($sw-text-color, .025); }
+.product-box { height: 100%; border: 1px solid $sw-border-color; border-radius: var(--ec-starter-radius); box-shadow: 0 4px 20px rgba($sw-text-color, .035); transition: box-shadow .2s ease, border-color .2s ease; }
+.product-box:hover { border-color: mix($sw-color-brand-primary, $sw-border-color, 35%); box-shadow: var(--ec-starter-shadow); }
 .product-box:focus-within { border-color: $sw-color-brand-primary; box-shadow: 0 0 0 2px rgba($sw-color-brand-primary, .12); }
 .product-box .card-body { display: flex; flex-direction: column; padding: 20px; }
-.product-box .product-image-wrapper { flex: 0 0 auto; height: 210px; margin-bottom: 18px; padding: 12px; border-radius: calc(var(--ec-starter-radius) / 1.5); background: var(--ec-starter-surface); }
+.product-box .product-image-wrapper { flex: 0 0 auto; height: 210px; margin-bottom: 18px; padding: 16px; border-radius: calc(var(--ec-starter-radius) / 1.5); background: linear-gradient(145deg, var(--ec-starter-accent-soft), var(--ec-starter-surface)); }
 .product-box .product-image { max-height: 190px; object-fit: contain; }
 .product-box .product-info { display: flex; flex: 1 1 auto; flex-direction: column; height: auto; }
 .product-box .product-name { color: $sw-headline-color; height: 3em; font-size: 1rem; font-weight: 700; line-height: 1.5; }
@@ -16,6 +17,10 @@
 .product-box .product-price { font-size: 1.375rem; font-weight: 700; letter-spacing: -.025em; }
 .product-box .product-action { margin-top: 16px; }
 .product-box .product-action .btn { width: 100%; }
+.product-box .product-action .btn-light {
+    color: color-contrast($sw-color-brand-secondary); background: $sw-color-brand-secondary; border-color: $sw-color-brand-secondary;
+    &:hover { color: color-contrast(darken($sw-color-brand-secondary, 6%)); background: darken($sw-color-brand-secondary, 6%); border-color: darken($sw-color-brand-secondary, 6%); }
+}
 .product-wishlist-action-circle { border: 1px solid $sw-border-color; box-shadow: 0 3px 10px rgba($sw-text-color, .06); }
 .cms-element-category-navigation { padding: 18px; border: 1px solid $sw-border-color; border-radius: var(--ec-starter-radius); background: var(--ec-starter-surface); }
 .category-navigation-link { padding-block: 12px; color: $sw-text-color; }

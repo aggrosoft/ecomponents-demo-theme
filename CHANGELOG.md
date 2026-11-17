@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.1.0 – 2026-11-17
+
+- Markanterer Header, Navigation, Produktkarten und Footer.
+- Native CMS-Gestaltung für Hero mit Bild, Themen-Teaser, Vorteile, dynamischen Produkt-Slider, Editorial und Abschluss-Teaser.
+- Inhalte und Logos bleiben vollständig über Erlebniswelten, Medien und Theme-Konfiguration pflegbar; keine Demo-Inhalte im Theme-Paket.
+- Zusätzliche Startseiten-Screenshots und Dokumentation für CMS-Aufbau und Logo-Konfiguration.
+- Korrigierte Linkfarben für CMS-Schaltflächen und sichtbares Hero-Bild auf Mobilgeräten.
+
 ## 1.0.1 – 2026-11-17
 
 - ExtensionMesh-Veröffentlichung mit geprüftem Shopware-CLI-Build und automatischer GitHub-Release-/Registry-Erzeugung.

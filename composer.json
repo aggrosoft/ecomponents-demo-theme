@@ -1,11 +1,16 @@
 {
   "name": "ecomponents/starter-theme",
   "description": "A lightweight, configurable Shopware 6.7 storefront theme by Ecomponents.",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "type": "shopware-platform-plugin",
   "license": "MIT",
   "homepage": "https://github.com/aggrosoft/ecomponents-demo-theme",
-  "authors": [{"name": "Aggrosoft GmbH", "homepage": "https://ecomponents.de"}],
+  "authors": [
+    {
+      "name": "Aggrosoft GmbH",
+      "homepage": "https://ecomponents.de"
+    }
+  ],
   "support": {
     "issues": "https://github.com/aggrosoft/ecomponents-demo-theme/issues",
     "source": "https://github.com/aggrosoft/ecomponents-demo-theme"

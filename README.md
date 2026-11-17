@@ -1,6 +1,6 @@
 # Ecomponents Starter
 
-Ein schlichtes, kostenloses Storefront-Theme für **Shopware 6.7**, entwickelt von Aggrosoft GmbH / Ecomponents. Version **1.0.1**, MIT-Lizenz.
+Ein schlichtes, kostenloses Storefront-Theme für **Shopware 6.7**, entwickelt von Aggrosoft GmbH / Ecomponents. Version **1.1.0**, MIT-Lizenz.
 
 ## Download
 
@@ -22,7 +22,11 @@ Die Quelle wird über den automatisch gepflegten Zweig `extension-mesh-registry`
 
 Die Bilder zeigen die **lokale Theme-Vorschau** mit vorhandenen Beispielinhalten. Die Beispielprodukte, Bilder und Erlebniswelten werden nicht mitinstalliert. Es handelt sich nicht um die Behauptung einer erfolgten Umstellung des externen Demoshops.
 
-[Produktübersicht](https://github.com/aggrosoft/ecomponents-demo-theme/blob/main/docs/screenshots/01-catalog-desktop.png) · [Produktdetail](https://github.com/aggrosoft/ecomponents-demo-theme/blob/main/docs/screenshots/02-product-desktop.png) · [Mobilansicht](https://github.com/aggrosoft/ecomponents-demo-theme/blob/main/docs/screenshots/03-product-mobile.png) · [Konto](https://github.com/aggrosoft/ecomponents-demo-theme/blob/main/docs/screenshots/04-account-desktop.png)
+[Startseite Desktop](docs/screenshots/05-home-desktop.png) · [Startseite Mobil](docs/screenshots/06-home-mobile.png) · [Produktübersicht](https://github.com/aggrosoft/ecomponents-demo-theme/blob/main/docs/screenshots/01-catalog-desktop.png) · [Produktdetail](https://github.com/aggrosoft/ecomponents-demo-theme/blob/main/docs/screenshots/02-product-desktop.png) · [Mobilansicht](https://github.com/aggrosoft/ecomponents-demo-theme/blob/main/docs/screenshots/03-product-mobile.png) · [Konto](https://github.com/aggrosoft/ecomponents-demo-theme/blob/main/docs/screenshots/04-account-desktop.png)
+
+## Dynamische CMS-Startseite und Logo
+
+Das Theme liefert ausschließlich die Gestaltung. Texte, Teaser, Bilder, Links und Produktgruppen werden in nativen Shopware-Erlebniswelten gepflegt; Logos werden über die normalen Medienfelder der Theme-Konfiguration gewählt. Es werden keine Startseiteninhalte oder Shopnamen beim Installieren angelegt. Eine Anleitung für eine frei befüllbare Startseite steht in [CMS und Logo](docs/CMS.md).
 
 ## Enthalten
 

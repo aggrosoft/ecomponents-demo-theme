@@ -5,6 +5,8 @@
     --ec-starter-surface: #{mix($sw-background-color, $sw-text-color, 97%)};
     --ec-starter-muted: #{mix($sw-text-color, $sw-background-color, 80%)};
     --ec-starter-link: #{mix($sw-color-brand-primary, $sw-text-color, 40%)};
+    --ec-starter-accent-soft: #{mix($sw-background-color, $sw-color-brand-primary, 94%)};
+    --ec-starter-shadow: 0 16px 48px #{rgba($sw-text-color, .07)};
     color: $sw-text-color;
     background: $sw-background-color;
     font-size: 1rem;
