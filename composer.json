@@ -1,9 +1,15 @@
 {
   "name": "ecomponents/starter-theme",
   "description": "A lightweight, configurable Shopware 6.7 storefront theme by Ecomponents.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "shopware-platform-plugin",
   "license": "MIT",
+  "homepage": "https://github.com/aggrosoft/ecomponents-demo-theme",
+  "authors": [{"name": "Aggrosoft GmbH", "homepage": "https://ecomponents.de"}],
+  "support": {
+    "issues": "https://github.com/aggrosoft/ecomponents-demo-theme/issues",
+    "source": "https://github.com/aggrosoft/ecomponents-demo-theme"
+  },
   "require": {
     "php": ">=8.2",
     "shopware/core": "~6.7.0",
@@ -16,13 +22,23 @@
   },
   "extra": {
     "shopware-plugin-class": "Ecomponents\\StarterTheme\\EcomponentsStarterTheme",
+    "shopware-icon": "src/Resources/config/plugin.png",
+    "copyright": "Copyright (c) 2026 Aggrosoft GmbH",
+    "manufacturerLink": {
+      "de-DE": "https://ecomponents.de",
+      "en-GB": "https://ecomponents.de"
+    },
+    "supportLink": {
+      "de-DE": "https://github.com/aggrosoft/ecomponents-demo-theme/issues",
+      "en-GB": "https://github.com/aggrosoft/ecomponents-demo-theme/issues"
+    },
     "label": {
       "de-DE": "Ecomponents Starter",
       "en-GB": "Ecomponents Starter"
     },
     "description": {
-      "de-DE": "Schlichtes, anpassbares Theme mit klarer Navigation und responsiven Produktkarten. Kostenlos unter MIT-Lizenz.",
-      "en-GB": "A clean, configurable theme with clear navigation and responsive product cards. Free under the MIT license."
+      "de-DE": "Kostenloses Shopware-6.7-Theme unter MIT-Lizenz mit responsiven Produktkarten, klarer Navigation und anpassbaren Farben, Schriften, Eckenradien und Inhaltsbreite.",
+      "en-GB": "Free MIT-licensed Shopware 6.7 theme with responsive product cards, clear navigation, configurable colours, fonts, corner radius and content width, using native Shopware features."
     }
   }
 }

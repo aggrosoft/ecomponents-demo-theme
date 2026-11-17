@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-labelledby="title">
+  <title id="title">Ecomponents Starter Theme</title>
+  <rect width="256" height="256" rx="48" fill="#f6f5f2"/>
+  <rect x="30" y="30" width="196" height="196" rx="32" fill="#233547"/>
+  <path d="M72 70h116v29H104v15h70v28h-70v15h84v29H72z" fill="#ffffff"/>
+  <rect x="156" y="159" width="32" height="27" fill="#c04e0b"/>
+</svg>

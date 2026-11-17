@@ -1,0 +1,7 @@
+/.github export-ignore
+/docs export-ignore
+/scripts export-ignore
+/dist export-ignore
+/.gitignore export-ignore
+/.gitattributes export-ignore
+/shopware-extension.yml export-ignore

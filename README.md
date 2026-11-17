@@ -1,12 +1,28 @@
 # Ecomponents Starter
 
-Ein schlichtes, kostenloses Storefront-Theme für **Shopware 6.7**, entwickelt von Aggrosoft GmbH / Ecomponents. Version **1.0.0**, MIT-Lizenz.
+Ein schlichtes, kostenloses Storefront-Theme für **Shopware 6.7**, entwickelt von Aggrosoft GmbH / Ecomponents. Version **1.0.1**, MIT-Lizenz.
 
 ## Download
 
-[Installierbares Theme-ZIP herunterladen](https://github.com/aggrosoft/ecomponents-demo-theme/raw/refs/heads/main/dist/EcomponentsStarterTheme-1.0.0.zip) · [SHA-256-Prüfsumme](https://github.com/aggrosoft/ecomponents-demo-theme/blob/main/dist/EcomponentsStarterTheme-1.0.0.zip.sha256)
+[Aktuelle GitHub-Releases und Installationspakete](https://github.com/aggrosoft/ecomponents-demo-theme/releases) enthalten das geprüfte Theme-ZIP, `SHA256SUMS`, `extension-mesh-release.json` und `extension-mesh-registry.json`.
 
 Quellcode und Versionshistorie: [aggrosoft/ecomponents-demo-theme](https://github.com/aggrosoft/ecomponents-demo-theme).
+
+## Installation über ExtensionMesh
+
+Diese Repository-Adresse als Quelle hinzufügen:
+
+```text
+https://github.com/aggrosoft/ecomponents-demo-theme
+```
+
+Die Quelle wird über den automatisch gepflegten Zweig `extension-mesh-registry` aufgelöst. Theme installieren und aktivieren, anschließend unter **Inhalte → Themes** dem gewünschten Verkaufskanal zuweisen. Die Installation allein ändert kein bereits zugewiesenes Theme.
+
+## Screenshots
+
+Die Bilder zeigen die **lokale Theme-Vorschau** mit vorhandenen Beispielinhalten. Die Beispielprodukte, Bilder und Erlebniswelten werden nicht mitinstalliert. Es handelt sich nicht um die Behauptung einer erfolgten Umstellung des externen Demoshops.
+
+[Produktübersicht](https://github.com/aggrosoft/ecomponents-demo-theme/blob/main/docs/screenshots/01-catalog-desktop.png) · [Produktdetail](https://github.com/aggrosoft/ecomponents-demo-theme/blob/main/docs/screenshots/02-product-desktop.png) · [Mobilansicht](https://github.com/aggrosoft/ecomponents-demo-theme/blob/main/docs/screenshots/03-product-mobile.png) · [Konto](https://github.com/aggrosoft/ecomponents-demo-theme/blob/main/docs/screenshots/04-account-desktop.png)
 
 ## Enthalten
 
@@ -31,7 +47,7 @@ Die Kompatibilität einzelner Plugins hängt von deren Nutzung der nativen Store
 ## Installation über die Administration
 
 1. Aktuelles Theme und relevante Konfiguration sichern.
-2. Unter **Erweiterungen → Meine Erweiterungen → Erweiterung hochladen** die Datei `EcomponentsStarterTheme-1.0.0.zip` hochladen.
+2. Unter **Erweiterungen → Meine Erweiterungen → Erweiterung hochladen** das passende `EcomponentsStarterTheme-<Version>.zip` aus den Releases hochladen.
 3. **Ecomponents Starter** installieren und aktivieren.
 4. Unter **Inhalte → Themes** das Theme dem gewünschten Storefront-Verkaufskanal zuweisen. Die Zuweisung ausdrücklich nur für den vorgesehenen Kanal vornehmen.
 5. Im Theme Logo, Farben und Schriften prüfen und speichern. Shopware kompiliert die Theme-Assets bei Zuweisung/Speichern.
@@ -93,3 +109,23 @@ Keine Migrationen, Installationsroutinen oder eigenen Entitäten. Ein Themewechs
 PHP-Klasse, Twig, Theme-Konfiguration und vollständige native Storefront-Kompilierung wurden gegen Shopware **6.7.15.1** geprüft, einschließlich einer abweichenden Farb-/Layoutkonfiguration. Das Release-Archiv wird mit Shopwares Plugin-ZIP-Erkennung und durch Vergleich aller enthaltenen Dateien validiert.
 
 Vor Veröffentlichung deines Shops bleibt eine Abnahme mit dessen tatsächlichen Produkten, Erlebniswelten und Plugins erforderlich. Das Theme enthält keine eigenen Beispieldaten und übernimmt keine Änderungen automatisch auf andere Installationen.
+
+## Build und Release
+
+Der Workflow prüft jeden Pull Request und jeden Push auf `main`. Nur ein erfolgreicher Build von `main` darf veröffentlichen. `composer.json` ist die Versionsquelle: eine neue stabile Version erzeugt den Tag `v<Version>`, einen GitHub-Release und den stabilen ExtensionMesh-Registry-Zweig. Vorhandene ExtensionMesh-Releases werden unverändert wiederverwendet.
+
+Die zentral gepflegten Store-Daten stehen in `shopware-extension.yml`: DE/EN-Beschreibung, Installationsanleitung, FAQ, Highlights, Features, Tags, PNG-Icon und Screenshot-Reihenfolge. `position` bedient die aktuelle Shopware CLI; das identische `priority` erhält die Kompatibilität mit dem installierten ExtensionMesh-Importer.
+
+Voraussetzungen für einen lokalen Build: PHP 8.2+ mit ZIP, YAML und mbstring sowie **Shopware CLI 0.20.0**. Der Build verändert keine Shopware-Datenbank und installiert weder Composer- noch npm-Abhängigkeiten:
+
+```bash
+php scripts/validate.php
+php scripts/build.php
+shopware-cli --no-interaction --no-update-hint --no-ai-hint extension validate .build/EcomponentsStarterTheme-1.0.1.zip --only=builtin,storefront-twig
+```
+
+Die Ausgabe liegt in `.build/`. Optional `SHOPWARE_CLI_BIN` auf eine vorhandene CLI-Binärdatei setzen. Shopware CLI erwartet eine native, gepunktete Konfigurationsdatei; das Buildskript erzeugt dafür vorübergehend eine identische `.shopware-extension.yml` und entfernt ausschließlich seine selbst erzeugte Datei wieder. Es gibt nur eine gepflegte Metadatenquelle.
+
+Das Paket enthält die SCSS-Quellen, die Shopware bei der Theme-Zuweisung kompiliert. Da das Theme ausschließlich natives JavaScript erbt, ist kein eigener Storefront-JavaScript-Build notwendig. Store-Screenshots, Entwicklungswerkzeuge, Workflows und alte ZIPs werden nicht in das Installationspaket gepackt.
+
+Der offizielle [ExtensionMesh-Publisher](https://github.com/Extension-Mesh/shopware-publisher/tree/46d115ace839124ed9c5f762dd42bf849723eb5e) veröffentlicht exakt das geprüfte Build-Artefakt. Danach wird der Registry-Zweig automatisch aktualisiert. Diesen Zweig und seine Manifeste nicht manuell pflegen. Details: [Release-Verfahren](https://github.com/aggrosoft/ecomponents-demo-theme/blob/main/docs/RELEASING.md).
