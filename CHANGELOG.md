@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.1 – 2026-11-17
+
+- Versionsunabhängiger Validierungsbefehl in der Build-Anleitung und aktualisierte Dokumentation zu sechs Screenshots.
+- Enthält die vollständig dynamische CMS-Gestaltung aus 1.1.0 unverändert.
+
 ## 1.1.0 – 2026-11-17
 
 - Markanterer Header, Navigation, Produktkarten und Footer.

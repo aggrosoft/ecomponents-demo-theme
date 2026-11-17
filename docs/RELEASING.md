@@ -45,6 +45,6 @@ Die Repository-Produktübernahme liest Beschreibung und Bilder aus der `shopware
 
 ## Screenshots aktualisieren
 
-Echte Ansichten des Themes unter `docs/screenshots/` ablegen, Reihenfolge und Sprachfreigabe in der YAML pflegen und `php scripts/validate.php` ausführen. Die vier aktuellen Bilder stammen aus einer lokalen, lesenden Theme-Vorschau auf nativen Shopware-Seiten. Ein Debugger-Overlay wurde ausschließlich im Aufnahmebrowser ausgeblendet; Shopinhalte wurden nicht verändert. Die Beispielprodukte und ihre Medien sind nicht Bestandteil des Installationspakets.
+Echte Ansichten des Themes unter `docs/screenshots/` ablegen, Reihenfolge und Sprachfreigabe in der YAML pflegen und `php scripts/validate.php` ausführen. Die sechs aktuellen Bilder stammen aus einer lokalen, lesenden Theme-Vorschau auf nativen Shopware-Seiten. Ein Debugger-Overlay wurde ausschließlich im Aufnahmebrowser ausgeblendet; Shopinhalte wurden nicht verändert. Die Beispielprodukte und ihre Medien sind nicht Bestandteil des Installationspakets.
 
 Eine Demo-Adresse erst unter `store.demo_shops` ergänzen, wenn das Theme dort tatsächlich installiert und geprüft ist. Die externe Demo-Installation wird von dieser Veröffentlichung nicht administriert.

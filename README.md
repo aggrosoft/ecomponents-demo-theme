@@ -1,6 +1,6 @@
 # Ecomponents Starter
 
-Ein schlichtes, kostenloses Storefront-Theme für **Shopware 6.7**, entwickelt von Aggrosoft GmbH / Ecomponents. Version **1.1.0**, MIT-Lizenz.
+Ein schlichtes, kostenloses Storefront-Theme für **Shopware 6.7**, entwickelt von Aggrosoft GmbH / Ecomponents. Version **1.1.1**, MIT-Lizenz.
 
 ## Download
 
@@ -125,7 +125,8 @@ Voraussetzungen für einen lokalen Build: PHP 8.2+ mit ZIP, YAML und mbstring so
 ```bash
 php scripts/validate.php
 php scripts/build.php
-shopware-cli --no-interaction --no-update-hint --no-ai-hint extension validate .build/EcomponentsStarterTheme-1.0.1.zip --only=builtin,storefront-twig
+version=$(php -r 'echo json_decode(file_get_contents("composer.json"), true)["version"];')
+shopware-cli --no-interaction --no-update-hint --no-ai-hint extension validate ".build/EcomponentsStarterTheme-${version}.zip" --only=builtin,storefront-twig
 ```
 
 Die Ausgabe liegt in `.build/`. Optional `SHOPWARE_CLI_BIN` auf eine vorhandene CLI-Binärdatei setzen. Shopware CLI erwartet eine native, gepunktete Konfigurationsdatei; das Buildskript erzeugt dafür vorübergehend eine identische `.shopware-extension.yml` und entfernt ausschließlich seine selbst erzeugte Datei wieder. Es gibt nur eine gepflegte Metadatenquelle.
